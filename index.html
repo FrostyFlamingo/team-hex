@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hextools</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
 
 </head>
 <body>
@@ -13,9 +14,29 @@
     <section class="home" id="home">
         <div>
             <div class="head">Hextools</div>
-            <div class="text">Collection of free design tools and resources for makers, developers and designers</div>
-            
-    
+
+            <div class="container">
+                    <span class="text first-text">Collection of free design tools and resources for </span>
+                <span class="text sec-text">Designers</span>
+            </div>
+        
+            <script>
+                const text = document.querySelector(".sec-text");
+        
+                const textLoad = () => {
+                    setTimeout(() => {
+                        text.textContent = "Designers";
+                    }, 0);
+                    setTimeout(() => {
+                        text.textContent = "Developers";
+                    }, 4000);
+                    setTimeout(() => {
+                        text.textContent = "Makers";
+                    }, 8000); //1s = 1000 milliseconds
+                }
+                textLoad();
+                setInterval(textLoad, 12000);
+            </script>    
         </div>    
     </section>
 
@@ -27,7 +48,7 @@
                 <div class="card">
                     <a href="" target="_blank" style="color:#fff; ">  
                         <div class="box">
-                            <i class=""></i>
+                            <i class="fa fa-search"></i>
                             <div class="text">Invisibility Cloak</div>   
                         </div>
                     </a>
@@ -35,7 +56,7 @@
                 <div class="card">
                     <a href="" target="_blank" style="color:#fff; ">  
                         <div class="box">
-                            <i class=""></i>
+                            <i class="fa-regular fa-image"></i>
                             <div class="text">Invisibility Cloak</div> 
                         </div>
                     </a>
@@ -411,5 +432,10 @@
             </div>     
         </div>
     </section>
+
+     <!---- footer section start ------>
+     <footer>
+        <span>Created By <a href="#">HEXAGON</a> With <span class="fa fa-heart"></span></span>
+    </footer>
 </body>
 </html>
