@@ -48,25 +48,28 @@ html{
     content: "works";
 }
 .listofboxes .list-content{
-    padding-top: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .listofboxes .list-content .card{
-    width: calc(33% - 20px);
-    background: #222;
+    width: 200px;
+    background: #000;
     text-align: center;
     border-radius: 6px;
-    padding: 20px 25px;
+    padding: 20px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 20px;
 }
 .listofboxes .list-content .card i{
     font-size: 50px;
     color: crimson;
 }
 .listofboxes .list-content .card .text{
-    font-size: 28px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 10px 0 10px 0;
 }
 .listofboxes .list-content .card:hover i{
     color: #fff;
@@ -79,5 +82,4 @@ html{
 }
 .listofboxes .list-content .card:hover .box{
     transform: scale(1.05);
-
 }
