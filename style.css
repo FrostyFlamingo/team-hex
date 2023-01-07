@@ -10,11 +10,53 @@
 html{
     scroll-behavior: smooth;
 }
+/*nav bar*/
+.navbar{
+    background-color: black;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 20px;
+    font-family: 'ubuntu',sans-serif; 
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.button {
+    background: linear-gradient(65deg,#5a51fe,#8751fe);
+    display: inline-flex;
+    font-size: 12px;
+    font-size: var(--font-xxs);
+    letter-spacing: 0;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    border: none;
+    border-radius: 2px;
+    justify-content: center;
+    padding: 12px 24px;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 8px 24px rgb(32 43 54 / 12%);
+    transition: all .15s ease;
+    cursor: pointer;
+}
+.button a{
+    color: #FFF;
+}
 .home{
     background-color:black;
     align-items: center;
     justify-content: center;
-    padding-top: 10%;
+    padding-top: 11%;
     padding-bottom: 10%;
 }
 .container{
@@ -68,6 +110,12 @@ html{
     padding-top: 50px;
     color: #fff;
     background: #A0AECD;
+}
+.listofboxes p{
+    text-align: center;
+    font-size: 17px;
+    color: #000;
+    padding-top: 7px;
 }
 .listofboxes .title::before{
     background: #fff;
